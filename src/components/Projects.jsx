@@ -1,13 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
 import { ChevronLeft, ChevronRight, Expand, Images, X } from "lucide-react";
 
+const galleryBaseUrl = `${import.meta.env.BASE_URL}images/gallery/`;
+
 const gallery = Array.from({ length: 50 }, (_, index) => {
   const number = index + 1;
   const imageNumber = String(number).padStart(2, "0");
 
   if (number <= 9) {
     return {
-      src: `/images/gallery/bmsb-projekt-${imageNumber}.jpg`,
+      src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
       category: "Hochbau",
       title: "Hochbau und Rohbau",
     };
@@ -15,7 +17,7 @@ const gallery = Array.from({ length: 50 }, (_, index) => {
 
   if (number <= 19) {
     return {
-      src: `/images/gallery/bmsb-projekt-${imageNumber}.jpg`,
+      src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
       category: "Betonbau",
       title: "Beton- und Treppenbau",
     };
@@ -23,14 +25,14 @@ const gallery = Array.from({ length: 50 }, (_, index) => {
 
   if (number <= 46) {
     return {
-      src: `/images/gallery/bmsb-projekt-${imageNumber}.jpg`,
+      src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
       category: "Infrastruktur",
       title: "Infrastruktur und Ingenieurbau",
     };
   }
 
   return {
-    src: `/images/gallery/bmsb-projekt-${imageNumber}.jpg`,
+    src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
     category: "Holzbau",
     title: "Holzbau und Ausbau",
   };

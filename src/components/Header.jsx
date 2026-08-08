@@ -22,7 +22,7 @@ export default function Header() {
         >
           <span className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,165,233,0.14),transparent_68%)] opacity-70 transition-opacity group-hover:opacity-100" />
           <img
-            src="/images/brand/bmsb-logo-clean.png"
+            src={`${import.meta.env.BASE_URL}images/brand/bmsb-logo-clean.png`}
             alt="BMSB"
             className="relative h-[62px] w-auto object-contain drop-shadow-[0_0_10px_rgba(14,165,233,0.2)] transition-all duration-300 group-hover:drop-shadow-[0_0_18px_rgba(14,165,233,0.55)] sm:h-[92px] lg:h-[112px] xl:h-[120px]"
           />

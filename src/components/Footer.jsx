@@ -9,7 +9,7 @@ export default function Footer() {
             aria-label="Zur Startseite"
           >
             <img
-              src="/images/brand/bmsb-logo-clean.png"
+              src={`${import.meta.env.BASE_URL}images/brand/bmsb-logo-clean.png`}
               alt="BMSB Bau- und Industrieservice GmbH"
               className="h-28 w-auto object-contain lg:h-32"
             />

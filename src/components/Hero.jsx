@@ -17,7 +17,7 @@ export default function Hero() {
       {/* Hintergrundbild */}
       <div className="absolute inset-0 -z-30">
         <img
-          src="/images/hero/hero-bmsb.jpg"
+          src={`${import.meta.env.BASE_URL}images/hero/hero-bmsb.jpg`}
           alt="Bauarbeiter vor einem Rohbau"
           className="h-full w-full object-cover object-[68%_center] sm:object-[64%_center] lg:object-right"
           onError={(event) => {
