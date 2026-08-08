@@ -1,4 +1,4 @@
-# BMSB GmbH – Version 2
+# BMSB GmbH 
 
 Modernes React/Vite/Tailwind-Grundgerüst für die BMSB Bau- und Industrieservice GmbH.
 
