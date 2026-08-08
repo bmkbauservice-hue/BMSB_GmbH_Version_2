@@ -45,8 +45,8 @@ export default function Footer() {
           </p>
 
           <p className="mt-4 text-sm leading-6 text-slate-500 dark:text-slate-400 lg:text-base">
-            Impressum und Datenschutz werden ergänzt, sobald Register- und
-            Steuerdaten vollständig vorliegen.
+            Handelsregister: Amtsgericht Charlottenburg 
+            Registernummer: HRB 180463 B
           </p>
         </div>
       </div>
