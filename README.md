@@ -1,187 +1,165 @@
+
+
+
+<div align="center">
+
+<img src="public/images/brand/bmsb-logo-clean.png" alt="BMSB Bau- und Industrieservice GmbH" width="340">
+
 BMSB Bau- und Industrieservice GmbH
+WIR BAUEN LÖSUNGEN. SCHAFFEN WERTE.
+Eine moderne Unternehmenswebsite für Bau, Industrieservice und Instandhaltung.
 
-Wir bauen Lösungen. Schaffen Werte.
+<br>
 
-Moderne Unternehmenswebsite für Bauprojekte, Industrieservice, Instandhaltung und professionelle Baudienstleistungen.
+
+
+
+
+
+<br><br>
+
+Konzeption und Entwicklung: Muju
+
+Ein Projekt von Muju
 
 </div>
 
-Über das Projekt
+<div align="center"> <img src="public/images/hero/hero-bmsb.jpg" alt="BMSB Bauprojekt" width="100%"> </div>
 
-Diese Website präsentiert die BMSB Bau- und Industrieservice GmbH mit ihren Leistungen, Stärken und ausgewählten Einblicken in die tägliche Arbeit. Das Design verbindet eine klare technische Optik mit den BMSB-Markenfarben und ist für Desktop, Tablet und Smartphone optimiert.
+<p align="center"> <a href="#-über-das-projekt">Über das Projekt</a> · <a href="#-leistungen">Leistungen</a> · <a href="#-funktionen">Funktionen</a> · <a href="#-installation">Installation</a> · <a href="#-bilder-und-inhalte-verwalten">Inhalte verwalten</a> </p>
 
-Die Website befindet sich aktuell in der Weiterentwicklung. Inhalte, Bilder sowie rechtliche Angaben können zentral im Projekt ergänzt und aktualisiert werden.
+🏗️ Über das Projekt
+Die Website präsentiert die BMSB Bau- und Industrieservice GmbH als modernen und zuverlässigen Partner für anspruchsvolle Bauprojekte, Industrieservice und Instandhaltung.
 
-Leistungen
+Das Erscheinungsbild orientiert sich an der BMSB-Marke: kräftiges Himmelblau, klare Linien, technische Elemente und eine hochwertige Darstellung der Leistungen und Referenzen. Sämtliche Bereiche wurden responsiv aufgebaut und funktionieren auf Desktop, Tablet und Smartphone.
 
-Industrieservice – technische Unterstützung, Montage, Betreuung und zuverlässiger Service für industrielle Anlagen und Betriebe
+Projektstatus: Die Website befindet sich in aktiver Entwicklung. Gestaltung, Galerie und Grundfunktionen sind bereits umgesetzt. Rechtliche Angaben und einzelne produktive Funktionen werden noch ergänzt.
 
-Baudienstleistungen – professionelle Bauleistungen für Gewerbe, Industrie und anspruchsvolle Projekte
+🎯 Projektziele
+Präsentieren	Vertrauen schaffen	Kontakt ermöglichen
+Leistungen klar und verständlich darstellen	echte Arbeit und Unternehmensstärken zeigen	Interessenten schnell zur Projektanfrage führen
+🧱 Leistungen
+Bereich	Beschreibung
+🏭 Industrieservice	Technische Unterstützung, Montage, Betreuung und zuverlässiger Service für industrielle Anlagen und Betriebe
+🏗️ Baudienstleistungen	Professionelle Bauleistungen für Gewerbe, Industrie und anspruchsvolle Projekte
+🔧 Instandhaltung	Wartung, Reparatur und Werterhalt mit kurzen Wegen und klarer Kommunikation
+🛡️ Sicherheit & Qualität	Strukturierte Abläufe und verlässliche Qualitätsstandards für nachhaltige Ergebnisse
+✨ Funktionen
+📱 vollständig responsives Layout
 
-Instandhaltung – Wartung, Reparatur und Werterhalt mit kurzen Wegen und klarer Kommunikation
+🌙 heller und dunkler Darstellungsmodus
 
-Sicherheit und Qualität – strukturierte Abläufe und verlässliche Qualitätsstandards für nachhaltige Ergebnisse
+🖼️ filterbare Projektgalerie mit 50 Aufnahmen
 
-Stärken der Website
+🔍 große Lightbox-Ansicht für Galeriebilder
 
-responsives Layout für Desktop, Tablet und Smartphone
+🧭 Desktop-Navigation und mobiles Menü
 
-heller und dunkler Darstellungsmodus
+⚡ schnelle Entwicklung und optimierter Build mit Vite
 
-große Startseite mit Hero-Bild und klaren Handlungsaufforderungen
+🎯 klare Buttons für Leistungen und Projektanfragen
 
-übersichtliche Darstellung der Leistungen und Unternehmensstärken
+🦾 animierte Unternehmensstärken und Leistungsbereiche
 
-filterbare Projektgalerie mit 50 Aufnahmen
+♿ Berücksichtigung reduzierter Animationen
 
-Bildansicht mit Lightbox
+📊 vorbereiteter Besucherzähler mit späterer Backend-Anbindung
 
-responsive Navigation mit mobilem Menü
-
-vorbereitetes Kontakt- und Anfrageelement
-
-Demo-Besucherzähler mit Anschlussmöglichkeit für ein späteres Backend
-
-reduzierte Animationen für Nutzer mit entsprechender Systemeinstellung
-
-Verwendete Technologien
-
-Technologie
-
-Verwendung
-
-React 19
-
-Aufbau der Benutzeroberfläche
-
-Vite 7
-
-Entwicklungsserver und Produktions-Build
-
-Tailwind CSS 4
-
-Layout, Farben und responsive Gestaltung
-
-Lucide React
-
-Icons für Navigation, Leistungen und Stärken
-
-Projekt lokal starten
-
+🛠️ Technik
+React 19            Benutzeroberfläche und Komponenten
+Vite 7              Entwicklungsserver und Produktions-Build
+Tailwind CSS 4      Styling und responsives Design
+Lucide React        Einheitliche Icons
+JavaScript / JSX    Anwendungslogik und Inhalte
+🚀 Installation
 Voraussetzung ist eine aktuelle Version von Node.js mit npm.
 
+1. Projektordner öffnen
 cd "/home/muju/Schreibtisch/Umschulung/BMSB GmbH/BMSB_GmbH_Version_2"
+2. Abhängigkeiten installieren
 npm install
+3. Entwicklungsserver starten
 npm run dev
-
-Anschließend die von Vite angezeigte Adresse im Browser öffnen, normalerweise:
+Danach die von Vite angezeigte Adresse öffnen:
 
 http://localhost:5173
-
-Verfügbare Befehle
-
-Befehl
-
-Funktion
-
-npm run dev
-
-startet den lokalen Entwicklungsserver
-
-npm run build
-
-erstellt die optimierte Produktionsversion im Ordner dist
-
-npm run preview
-
-zeigt den fertigen Produktions-Build lokal an
-
-Projektstruktur
-
+📜 Befehle
+Befehl	Funktion
+npm run dev	startet die Website im Entwicklungsmodus
+npm run build	erstellt die optimierte Website im Ordner dist
+npm run preview	zeigt den fertigen Produktions-Build lokal an
+📁 Projektstruktur
 BMSB_GmbH_Version_2/
 ├── public/
 │   └── images/
-│       ├── brand/       # Logo und Markenbilder
-│       ├── gallery/     # Bilder der Projektgalerie
-│       ├── hero/        # großes Startseitenbild
-│       ├── projects/    # weitere Projektbilder
-│       └── services/    # Bilder für Leistungsbereiche
+│       ├── brand/              Logo und Markenelemente
+│       ├── gallery/            Bilder der Projektgalerie
+│       ├── hero/               großes Startseitenbild
+│       ├── projects/           weitere Projektbilder
+│       └── services/           Bilder der Leistungsbereiche
+│
 ├── src/
-│   ├── components/      # Seitenbereiche und UI-Komponenten
-│   ├── data/            # Firmen- und Website-Inhalte
-│   ├── services/        # technische Dienste, z. B. Besucherzähler
-│   ├── styles/          # globale Gestaltung
-│   ├── App.jsx          # Zusammensetzung der Website
-│   └── main.jsx         # Einstiegspunkt der React-Anwendung
+│   ├── components/             Seitenbereiche und UI-Komponenten
+│   ├── data/                   Firmen- und Website-Inhalte
+│   ├── services/               technische Dienste
+│   ├── styles/                 globale Gestaltung
+│   ├── App.jsx                 Aufbau der gesamten Website
+│   └── main.jsx                Startpunkt der React-Anwendung
+│
 ├── index.html
 ├── package.json
-└── vite.config.js
-
-Inhalte bearbeiten
-
-Firmendaten
-
+├── vite.config.js
+└── README.md
+🖼️ Bilder und Inhalte verwalten
+Firmendaten ändern
 Die zentralen Angaben zur Firma befinden sich in:
 
 src/data/companyData.js
-
-Seitentexte und weitere Inhaltsdaten befinden sich in:
+Weitere Seitentexte und Inhaltsdaten befinden sich in:
 
 src/data/siteData.js
-
-Logo
-
-Das freigestellte BMSB-Logo liegt unter:
+Logo austauschen
+Das transparente BMSB-Logo liegt hier:
 
 public/images/brand/bmsb-logo-clean.png
+Wird das Logo ersetzt und der Dateiname beibehalten, sind keine weiteren Änderungen im Quellcode notwendig.
 
-Header und Footer greifen auf diese Datei zu. Beim Austausch sollte der Dateiname beibehalten werden, damit keine Anpassung im Quellcode nötig ist.
-
-Galerie
-
-Die Galeriebilder liegen unter:
+Galeriebilder verwalten
+Alle Bilder der Galerie befinden sich in:
 
 public/images/gallery/
-
-Die aktuell eingebundenen Dateien heißen:
+Aktuell werden folgende Dateien verwendet:
 
 bmsb-projekt-01.jpg bis bmsb-projekt-50.jpg
-
-Filter, Reihenfolge, Kategorien und die Anzahl der angezeigten Bilder werden in folgender Datei verwaltet:
+Die Reihenfolge, Kategorien, Filter und Anzahl der Bilder werden hier gesteuert:
 
 src/components/Projects.jsx
+Wichtig: Wird ein Bild aus dem Galerieordner entfernt, muss auch der entsprechende Eintrag oder Nummernbereich in Projects.jsx angepasst werden. Andernfalls bleibt eine fehlerhafte Bildkachel zurück.
 
-Ein Bild sollte nicht nur aus dem Ordner gelöscht werden. Auch der entsprechende Eintrag beziehungsweise der erwartete Nummernbereich in Projects.jsx muss angepasst werden, damit keine leere oder fehlerhafte Kachel erscheint.
-
-Website vorübergehend teilen
-
-Für eine kurzfristige Vorschau über den eigenen Computer kann zuerst Vite gestartet werden:
+🌐 Website vorübergehend teilen
+Vite im ersten Terminal starten:
 
 npm run dev -- --host 0.0.0.0
-
-In einem zweiten Terminal kann anschließend ein temporärer Cloudflare-Tunnel geöffnet werden:
+Cloudflare-Tunnel in einem zweiten Terminal starten:
 
 cloudflared tunnel --url http://localhost:5173
+Die erzeugte trycloudflare.com-Adresse kann anschließend verschickt werden. Computer, Vite-Server und Tunnel müssen während der Vorschau eingeschaltet bleiben.
 
-Der Computer, der Vite-Server und der Tunnel müssen während der Vorschau eingeschaltet bleiben. Die erzeugte trycloudflare.com-Adresse ist nur vorübergehend und kann sich nach einem Neustart ändern.
-
-Produktions-Build
-
-Vor einer Veröffentlichung sollte die Website geprüft und anschließend gebaut werden:
-
+📦 Produktionsversion erstellen
 npm run build
 npm run preview
+Die veröffentlichungsfertige Website befindet sich danach im Ordner:
 
-Die veröffentlichungsfertigen Dateien befinden sich danach im Ordner dist.
+dist/
+🏢 Unternehmen
+BMSB Bau- und Industrieservice GmbH
+Unter den Linden 26–30
+10117 Berlin
 
-Firmendaten
+Geschäftsführer: Albert Ernst Schymik
+E-Mail: info@bmsb-gmbh.com
 
-BMSB Bau- und Industrieservice GmbHUnter den Linden 26–3010117 Berlin
-
-Geschäftsführer: Albert Ernst SchymikE-Mail: info@bmsb-gmbh.com
-
-Noch zu ergänzen
-
+✅ Vor der Veröffentlichung ergänzen
 Telefonnummer
 
 Handelsregisternummer und Registergericht
@@ -196,12 +174,16 @@ produktive Verarbeitung des Kontaktformulars
 
 echtes Statistik-Backend für den Besucherzähler
 
-Hinweis: Vor der öffentlichen Veröffentlichung müssen Impressum, Datenschutz und sämtliche Unternehmensangaben rechtlich geprüft und vervollständigt werden.
+Vor der öffentlichen Veröffentlichung müssen Impressum, Datenschutz und sämtliche Unternehmensangaben rechtlich geprüft und vervollständigt werden.
 
-Nutzungsrechte
-
-Quellcode, Bilder, Logo und Inhalte dieses Projekts sind für die Website der BMSB Bau- und Industrieservice GmbH bestimmt. Eine Weiterverwendung durch Dritte ist nur mit ausdrücklicher Genehmigung gestattet.
+©️ Nutzungsrechte
+Quellcode, Bilder, Logo und Inhalte sind für die Website der BMSB Bau- und Industrieservice GmbH bestimmt. Eine Weiterverwendung durch Dritte ist nur mit ausdrücklicher Genehmigung gestattet.
 
 <div align="center">
-  © 2026 BMSB Bau- und Industrieservice GmbH
+
+Entwickelt mit 💙 von Muju
+GitHub-Profil von Muju
+
+© 2026 BMSB Bau- und Industrieservice GmbH
+
 </div>
