@@ -72,13 +72,13 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-14 grid w-[min(1000px,calc(100vw-3rem))] grid-cols-2 gap-x-12 gap-y-8 lg:grid-cols-4">
+          <div className="mt-14 grid w-full grid-cols-1 gap-6 min-[390px]:grid-cols-2 lg:w-[min(1000px,calc(100vw-3rem))] lg:grid-cols-4 lg:gap-x-12 lg:gap-y-8">
   {strengths.map(({ label, icon: Icon }) => (
     <div
   key={label}
-  className="group flex cursor-default items-center gap-5 text-base font-black uppercase leading-6 tracking-wide text-slate-800 dark:text-slate-100 lg:text-lg"
+  className="group flex min-w-0 cursor-default items-center gap-3 text-sm font-black uppercase leading-5 tracking-[0.04em] text-slate-800 dark:text-slate-100 sm:gap-4 sm:text-base lg:gap-5 lg:text-lg lg:leading-6 lg:tracking-wide"
 >
-  <span className="hex-icon strength-icon size-20 shrink-0 lg:size-24">
+  <span className="hex-icon strength-icon size-16 shrink-0 sm:size-20 lg:size-24">
     <span className="hex-icon-inner">
       <Icon
         size={38}

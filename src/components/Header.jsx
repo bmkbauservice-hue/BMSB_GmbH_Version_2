@@ -14,19 +14,19 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-sky-500/20 bg-white/95 shadow-[0_12px_40px_rgba(15,23,42,0.08)] backdrop-blur-xl dark:border-sky-300/20 dark:bg-slate-950/95 dark:shadow-[0_18px_50px_rgba(0,0,0,0.3)]">
-      <div className="header-shell flex h-24 items-center justify-between gap-3 sm:h-32 lg:h-40 lg:gap-8">
+      <div className="header-shell flex h-24 items-center justify-between gap-3 sm:h-32 lg:h-36 lg:gap-8">
         <a
           href="#start"
-          className="group relative flex w-44 shrink-0 flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-sky-500/15 bg-sky-500/[0.03] px-3 py-2 shadow-[0_0_0_rgba(14,165,233,0)] transition-all duration-300 hover:scale-[1.04] hover:border-sky-400/60 hover:bg-sky-500/[0.06] hover:shadow-[0_0_38px_rgba(14,165,233,0.25)] sm:w-60 lg:w-72 dark:bg-sky-400/[0.03]"
+          className="group relative flex w-40 shrink-0 flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-sky-500/15 bg-sky-500/[0.03] px-3 py-2 shadow-[0_0_0_rgba(14,165,233,0)] transition-all duration-300 hover:scale-[1.04] hover:border-sky-400/60 hover:bg-sky-500/[0.06] hover:shadow-[0_0_38px_rgba(14,165,233,0.25)] sm:w-52 lg:w-60 dark:bg-sky-400/[0.03]"
           aria-label="BMSB Startseite"
         >
           <span className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,165,233,0.14),transparent_68%)] opacity-70 transition-opacity group-hover:opacity-100" />
           <img
             src={`${import.meta.env.BASE_URL}images/brand/bmsb-logo-clean.png`}
             alt="BMSB"
-            className="relative h-[62px] w-auto object-contain drop-shadow-[0_0_10px_rgba(14,165,233,0.2)] transition-all duration-300 group-hover:drop-shadow-[0_0_18px_rgba(14,165,233,0.55)] sm:h-[92px] lg:h-[112px] xl:h-[120px]"
+            className="relative h-[58px] w-auto object-contain drop-shadow-[0_0_10px_rgba(14,165,233,0.2)] transition-all duration-300 group-hover:drop-shadow-[0_0_18px_rgba(14,165,233,0.55)] sm:h-[76px] lg:h-[88px]"
           />
-          <span className="relative mt-1 hidden text-[10px] font-black tracking-[0.15em] text-slate-700 uppercase sm:block lg:text-[11px] dark:text-slate-100">
+          <span className="relative mt-1 hidden whitespace-nowrap text-[10px] font-black tracking-[0.08em] text-slate-700 uppercase sm:block lg:text-[11px] dark:text-slate-100">
             Bau &amp; Industrieservice GmbH
           </span>
         </a>

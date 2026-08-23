@@ -1,10 +1,7 @@
-import VisitorCounter from "./VisitorCounter";
-
 export default function Stats() {
   return (
     <section className="bg-sky-50 py-20 transition-colors duration-300 dark:bg-slate-900">
-      <div className="section-shell grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-        <VisitorCounter />
+      <div className="section-shell grid gap-5 md:grid-cols-3">
         {[
           ["100 %", "Einsatz"],
           ["4", "Leistungsbereiche"],

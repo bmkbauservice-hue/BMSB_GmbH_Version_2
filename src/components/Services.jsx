@@ -78,7 +78,7 @@ export default function Services() {
                 <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
                   {service.text}
                 </p>
-                <span className="mt-auto pt-5 text-[11px] font-black uppercase tracking-[0.15em] text-sky-500 opacity-70 transition-opacity group-hover:opacity-100">
+                <span className="mt-auto pt-5 text-xs font-black uppercase tracking-[0.15em] text-sky-500 opacity-70 transition-opacity group-hover:opacity-100">
                   Anklicken zum Vergrößern
                 </span>
               </button>

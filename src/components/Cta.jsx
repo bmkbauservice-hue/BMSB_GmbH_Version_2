@@ -34,6 +34,22 @@ export default function Cta() {
                 Geschäftsführer:<br />
                 <span className="font-bold text-white">Albert Ernst Schymik</span>
               </p>
+              <div className="mt-5 space-y-2">
+                <a
+                  href="tel:+493085625715"
+                  className="block font-bold text-white underline decoration-white/40 underline-offset-4 transition hover:decoration-white"
+                >
+                  <span className="font-normal text-white/75">Festnetz:</span>{" "}
+                  +49 30 85625715
+                </a>
+                <a
+                  href="tel:+4915735983260"
+                  className="block font-bold text-white underline decoration-white/40 underline-offset-4 transition hover:decoration-white"
+                >
+                  <span className="font-normal text-white/75">Mobil:</span>{" "}
+                  +49 1573 5983260
+                </a>
+              </div>
               <a
                 href="mailto:info@bmsb-gmbh.com"
                 className="mt-4 inline-block font-bold text-white underline decoration-white/40 underline-offset-4"

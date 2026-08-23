@@ -31,6 +31,21 @@ export default function Footer() {
             Geschäftsführer: Albert Ernst Schymik
           </p>
 
+          <div className="mt-3 flex flex-col gap-1 text-base lg:text-lg">
+            <a
+              href="tel:+493085625715"
+              className="font-bold text-sky-600 transition hover:text-sky-500 dark:text-sky-300"
+            >
+              Festnetz: +49 30 85625715
+            </a>
+            <a
+              href="tel:+4915735983260"
+              className="font-bold text-sky-600 transition hover:text-sky-500 dark:text-sky-300"
+            >
+              Mobil: +49 1573 5983260
+            </a>
+          </div>
+
           <a
             href="mailto:info@bmsb-gmbh.com"
             className="mt-3 inline-block text-base font-bold text-sky-600 hover:text-sky-500 lg:text-lg"

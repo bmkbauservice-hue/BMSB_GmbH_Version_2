@@ -146,7 +146,7 @@ export default function Projects() {
                   <Expand size={18} />
                 </span>
                 <span className="absolute inset-x-0 bottom-0 p-5 text-white">
-                  <span className="block text-[10px] font-black uppercase tracking-[0.18em] text-sky-300">
+                  <span className="block text-xs font-black uppercase tracking-[0.18em] text-sky-300">
                     {image.category}
                   </span>
                   <span className="mt-1 block text-lg font-black">{image.title}</span>
