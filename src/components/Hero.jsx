@@ -1,14 +1,45 @@
 
 import { ArrowRight, Clock3, Medal, ShieldCheck, Users } from "lucide-react";
+import { useState } from "react";
 
 const strengths = [
-  { label: "Zuverlässig & effizient", icon: ShieldCheck },
-  { label: "Hohe Qualität", icon: Medal },
-  { label: "Erfahrenes Team", icon: Users },
-  { label: "Termintreu", icon: Clock3 },
+  {
+    label: "Zuverlässig & effizient",
+    icon: ShieldCheck,
+    description:
+      "Verbindliche Absprachen, kurze Entscheidungswege und eine effiziente Koordination sorgen für einen reibungslosen Projektablauf.",
+  },
+  {
+    label: "Hohe Qualität",
+    icon: Medal,
+    description:
+      "Sorgfältige Ausführung, geeignete Materialien und kontrollierte Arbeitsschritte sichern dauerhaft überzeugende Ergebnisse.",
+  },
+  {
+    label: "Erfahrenes Team",
+    icon: Users,
+    description:
+      "Praxisnahe Erfahrung aus Bau und Industrie ermöglicht sichere Entscheidungen und eine professionelle Umsetzung vor Ort.",
+  },
+  {
+    label: "Termintreu",
+    icon: Clock3,
+    description:
+      "Realistische Planung, direkte Abstimmung und verlässliche Abläufe helfen dabei, vereinbarte Termine sicher einzuhalten.",
+  },
 ];
 
 export default function Hero() {
+  const [activeStrength, setActiveStrength] = useState(null);
+
+  function toggleStrength(label) {
+    setActiveStrength((current) => (current === label ? null : label));
+  }
+
+  const selectedStrength = strengths.find(
+    ({ label }) => label === activeStrength,
+  );
+
   return (
     <section
       id="start"
@@ -70,28 +101,69 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-14 grid w-full grid-cols-1 gap-6 min-[390px]:grid-cols-2 lg:w-[min(1000px,calc(100vw-3rem))] lg:grid-cols-4 lg:gap-x-12 lg:gap-y-8">
-  {strengths.map(({ label, icon: Icon }) => (
-    <div
-  key={label}
-  className="group flex min-w-0 cursor-default items-center gap-3 text-sm font-black uppercase leading-5 tracking-[0.04em] text-slate-800 dark:text-slate-100 sm:gap-4 sm:text-base lg:gap-5 lg:text-lg lg:leading-6 lg:tracking-wide"
->
-  <span className="hex-icon strength-icon size-16 shrink-0 sm:size-20 lg:size-24">
-    <span className="hex-icon-inner">
-      <Icon
-        size={38}
-        strokeWidth={2.2}
-        className="strength-svg text-sky-500"
-      />
-    </span>
-  </span>
+          <div className="mt-14 w-full lg:w-[min(1000px,calc(100vw-3rem))]">
+            <div className="grid grid-cols-1 gap-6 min-[390px]:grid-cols-2 lg:grid-cols-4 lg:gap-x-12 lg:gap-y-8">
+              {strengths.map(({ label, icon: Icon }) => {
+                const isActive = activeStrength === label;
 
-  <span className="transition-colors duration-300 group-hover:text-sky-400">
-    {label}
-  </span>
-</div>
-  ))}
-</div>
+                return (
+                  <button
+                    key={label}
+                    type="button"
+                    onClick={() => toggleStrength(label)}
+                    aria-expanded={isActive}
+                    aria-controls="strength-detail"
+                    className={`group flex min-w-0 cursor-pointer items-center gap-3 rounded-xl text-left text-sm leading-5 font-black tracking-[0.04em] uppercase transition-all duration-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-500 sm:gap-4 sm:text-base lg:gap-5 lg:text-lg lg:leading-6 lg:tracking-wide ${
+                      isActive
+                        ? "text-sky-600 dark:text-sky-300"
+                        : "text-slate-800 hover:text-sky-500 dark:text-slate-100 dark:hover:text-sky-300"
+                    }`}
+                  >
+                    <span
+                      className={`hex-icon strength-icon size-16 shrink-0 transition-[filter] duration-300 sm:size-20 lg:size-24 ${
+                        isActive
+                          ? "drop-shadow-[0_0_10px_rgba(96,165,250,0.65)]"
+                          : ""
+                      }`}
+                    >
+                      <span className="hex-icon-inner">
+                        <Icon
+                          size={38}
+                          strokeWidth={2.2}
+                          className={`strength-svg transition-colors duration-300 ${
+                            isActive ? "text-sky-400" : "text-sky-500"
+                          }`}
+                        />
+                      </span>
+                    </span>
+
+                    <span>{label}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            <div
+              id="strength-detail"
+              className={`grid transition-[grid-template-rows,opacity,margin] duration-300 ease-out ${
+                selectedStrength
+                  ? "mt-7 grid-rows-[1fr] opacity-100"
+                  : "mt-0 grid-rows-[0fr] opacity-0"
+              }`}
+              aria-live="polite"
+            >
+              <div className="overflow-hidden">
+                <div className="rounded-2xl border border-[#1a2a4f]/20 bg-white/85 px-5 py-4 shadow-[0_14px_40px_rgba(26,42,79,0.12)] backdrop-blur-md dark:border-sky-300/25 dark:bg-slate-900/90 dark:shadow-[0_0_24px_rgba(96,165,250,0.12)] sm:px-6 sm:py-5">
+                  <p className="text-sm font-black tracking-[0.1em] text-[#1a2a4f] uppercase dark:text-sky-300 sm:text-base">
+                    {selectedStrength?.label}
+                  </p>
+                  <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-700 dark:text-slate-300 sm:text-base sm:leading-7">
+                    {selectedStrength?.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
