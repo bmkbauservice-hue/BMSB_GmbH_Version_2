@@ -1,6 +1,6 @@
 
 import { ArrowRight, Clock3, Medal, ShieldCheck, Users } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const strengths = [
   {
@@ -31,6 +31,29 @@ const strengths = [
 
 export default function Hero() {
   const [activeStrength, setActiveStrength] = useState(null);
+  const strengthsRef = useRef(null);
+
+  useEffect(() => {
+    if (!activeStrength) return undefined;
+
+    function closeOnOutsidePointer(event) {
+      if (!strengthsRef.current?.contains(event.target)) {
+        setActiveStrength(null);
+      }
+    }
+
+    function closeOnEscape(event) {
+      if (event.key === "Escape") setActiveStrength(null);
+    }
+
+    document.addEventListener("pointerdown", closeOnOutsidePointer);
+    document.addEventListener("keydown", closeOnEscape);
+
+    return () => {
+      document.removeEventListener("pointerdown", closeOnOutsidePointer);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [activeStrength]);
 
   function toggleStrength(label) {
     setActiveStrength((current) => (current === label ? null : label));
@@ -101,7 +124,10 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-14 w-full lg:w-[min(1000px,calc(100vw-3rem))]">
+          <div
+            ref={strengthsRef}
+            className="mt-14 w-full lg:w-[min(1000px,calc(100vw-3rem))]"
+          >
             <div className="grid grid-cols-1 gap-6 min-[390px]:grid-cols-2 lg:grid-cols-4 lg:gap-x-12 lg:gap-y-8">
               {strengths.map(({ label, icon: Icon }) => {
                 const isActive = activeStrength === label;
