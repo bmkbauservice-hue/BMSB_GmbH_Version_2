@@ -68,12 +68,6 @@ export default function Footer() {
             Geschäftsführer: Albert Ernst Schymik
           </p>
 
-          <a
-            href="mailto:info@bmsb-gmbh.com"
-            className="mt-3 inline-block text-base font-bold text-sky-600 hover:text-sky-500 lg:text-lg"
-          >
-            info@bmsb-gmbh.com
-          </a>
         </div>
 
           <div className="text-base font-semibold leading-7 text-slate-700 dark:text-slate-300 lg:text-right lg:text-lg">
