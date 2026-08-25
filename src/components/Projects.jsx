@@ -15,7 +15,7 @@ const gallery = Array.from({ length: 50 }, (_, index) => {
     };
   }
 
-  if (number <= 19) {
+  if (number <= 19 || number === 47) {
     return {
       src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
       category: "Betonbau",
@@ -131,7 +131,7 @@ export default function Projects() {
                 key={image.src}
                 type="button"
                 onClick={() => setSelectedImage(fullIndex)}
-                className="group relative aspect-[4/3] overflow-hidden rounded-2xl border-2 border-white bg-slate-200 text-left shadow-[0_12px_30px_rgba(15,23,42,0.08)] transition hover:-translate-y-1 hover:border-sky-400 hover:shadow-[0_18px_42px_rgba(14,165,233,0.18)] dark:border-slate-800 dark:bg-slate-800"
+                className="group relative aspect-[4/3] overflow-hidden rounded-2xl border-2 border-white bg-slate-200 text-left shadow-[0_12px_30px_rgba(15,23,42,0.08)] transition hover:-translate-y-1 hover:border-sky-400 hover:shadow-[0_18px_42px_rgba(26,42,79,0.18)] dark:border-slate-800 dark:bg-slate-800"
                 aria-label={`${image.title} – Bild ${index + 1} vergrößern`}
               >
                 <img
@@ -161,7 +161,7 @@ export default function Projects() {
             <button
               type="button"
               onClick={() => setShowAll(true)}
-              className="inline-flex min-h-13 items-center gap-3 rounded-md border-2 border-sky-500 bg-white px-7 text-xs font-black uppercase tracking-[0.08em] text-sky-600 transition hover:-translate-y-0.5 hover:bg-sky-500 hover:text-white dark:bg-slate-900 dark:text-sky-300"
+              className="inline-flex min-h-13 items-center gap-3 rounded-md border-2 border-[#2c3d6e] bg-white px-7 text-xs font-black uppercase tracking-[0.08em] text-[#2c3d6e] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#60a5fa] hover:bg-[#60a5fa]/10 hover:text-[#60a5fa] hover:shadow-[0_0_22px_rgba(96,165,250,0.35)] hover:[text-shadow:0_0_8px_rgba(96,165,250,0.8)] dark:bg-slate-900"
             >
               <Images size={19} /> Alle {filteredGallery.length} Bilder anzeigen
             </button>

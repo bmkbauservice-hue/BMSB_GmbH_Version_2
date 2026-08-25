@@ -5,18 +5,14 @@ export default function Footer() {
         <div>
           <a
             href="#start"
-            className="inline-flex flex-col items-center"
+            className="inline-flex flex-col items-center transition-transform duration-300 hover:-translate-y-1 hover:scale-[1.02]"
             aria-label="Zur Startseite"
           >
             <img
-              src={`${import.meta.env.BASE_URL}images/brand/bmsb-logo-clean.png`}
+              src={`${import.meta.env.BASE_URL}images/brand/bmsb-logo-wordmark.png`}
               alt="BMSB Bau- und Industrieservice GmbH"
-              className="h-28 w-auto object-contain lg:h-32"
+              className="h-auto w-64 object-contain transition-[filter] duration-300 sm:w-80 dark:brightness-0 dark:invert"
             />
-
-            <span className="mt-2 text-sm font-black uppercase tracking-[0.12em] text-slate-700 dark:text-slate-200">
-              Bau & Industrieservice GmbH
-            </span>
           </a>
 
           <p className="mt-7 max-w-2xl text-base leading-8 text-slate-700 dark:text-slate-300 lg:text-lg">
@@ -30,21 +26,6 @@ export default function Footer() {
           <p className="mt-3 text-base leading-7 text-slate-700 dark:text-slate-300 lg:text-lg">
             Geschäftsführer: Albert Ernst Schymik
           </p>
-
-          <div className="mt-3 flex flex-col gap-1 text-base lg:text-lg">
-            <a
-              href="tel:+493085625715"
-              className="font-bold text-sky-600 transition hover:text-sky-500 dark:text-sky-300"
-            >
-              Festnetz: +49 30 85625715
-            </a>
-            <a
-              href="tel:+4915735983260"
-              className="font-bold text-sky-600 transition hover:text-sky-500 dark:text-sky-300"
-            >
-              Mobil: +49 1573 5983260
-            </a>
-          </div>
 
           <a
             href="mailto:info@bmsb-gmbh.com"

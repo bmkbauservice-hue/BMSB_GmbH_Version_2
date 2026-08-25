@@ -43,7 +43,7 @@ export default function Services() {
       <div className="section-shell">
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-[1.55fr_repeat(4,1fr)] xl:items-stretch">
           <div className="flex flex-col justify-center pb-6 md:col-span-2 xl:col-span-1 xl:pb-0 xl:pr-5">
-            <p className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.22em] text-sky-500">
+            <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-sky-500 sm:text-base">
               <span className="h-0.5 w-9 bg-sky-500" /> Was wir tun
             </p>
             <h2 className="mt-5 text-4xl font-black uppercase italic tracking-tight text-slate-900 dark:text-white sm:text-5xl">
@@ -64,12 +64,12 @@ export default function Services() {
                 type="button"
                 onClick={() => setSelectedIndex(index)}
                 aria-haspopup="dialog"
-                className="group relative flex min-h-72 cursor-pointer flex-col items-center overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-[0_12px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-3 hover:scale-[1.03] hover:border-amber-400/80 hover:shadow-[0_22px_55px_rgba(14,165,233,0.24),0_0_32px_rgba(245,158,11,0.22)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-sky-500 dark:border-slate-800 dark:bg-slate-900 dark:shadow-black/20 dark:hover:border-amber-300/80"
+                className="group relative flex min-h-72 cursor-pointer flex-col items-center overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-[0_12px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-3 hover:scale-[1.03] hover:border-[#60a5fa] hover:shadow-[0_0_28px_rgba(96,165,250,0.28),0_22px_55px_rgba(26,42,79,0.2)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#60a5fa] dark:border-slate-800 dark:bg-slate-900 dark:shadow-black/20 dark:hover:border-[#60a5fa]"
               >
-                <span className="pointer-events-none absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-linear-to-r from-sky-500 via-amber-300 to-sky-500 transition-transform duration-300 group-hover:scale-x-100" />
-                <span className="hex-icon size-16 shrink-0 transition-all duration-300 group-hover:scale-125 group-hover:drop-shadow-[0_0_12px_rgba(245,158,11,0.85)]">
+                <span className="pointer-events-none absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-linear-to-r from-[#60a5fa] via-[#bfdbfe] to-[#60a5fa] transition-transform duration-300 group-hover:scale-x-100" />
+                <span className="hex-icon service-card-icon size-16 shrink-0 transition-all duration-300 group-hover:scale-125">
                   <span className="hex-icon-inner">
-                    <Icon size={28} className="text-sky-500" />
+                    <Icon size={28} className="service-card-svg text-[#2c3d6e]" />
                   </span>
                 </span>
                 <h3 className="mt-5 text-base font-black uppercase text-slate-900 dark:text-white">
@@ -78,7 +78,7 @@ export default function Services() {
                 <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
                   {service.text}
                 </p>
-                <span className="mt-auto pt-5 text-xs font-black uppercase tracking-[0.15em] text-sky-500 opacity-70 transition-opacity group-hover:opacity-100">
+                <span className="mt-auto pt-5 text-xs font-black uppercase tracking-[0.15em] text-[#2c3d6e] opacity-70 transition-all duration-300 group-hover:text-[#60a5fa] group-hover:opacity-100 group-hover:[text-shadow:0_0_10px_rgba(96,165,250,0.95)]">
                   Anklicken zum Vergrößern
                 </span>
               </button>
@@ -98,7 +98,7 @@ export default function Services() {
             aria-modal="true"
             aria-labelledby="service-detail-title"
             onMouseDown={(event) => event.stopPropagation()}
-            className="service-detail-pop relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-sky-400/40 bg-white p-7 text-center shadow-[0_30px_100px_rgba(14,165,233,0.3),0_0_55px_rgba(245,158,11,0.22)] dark:bg-slate-900 sm:p-12"
+            className="service-detail-pop relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-3xl border border-sky-400/40 bg-white p-7 text-center shadow-[0_30px_100px_rgba(26,42,79,0.3)] dark:bg-slate-900 sm:p-12"
           >
             <button
               type="button"
@@ -109,12 +109,12 @@ export default function Services() {
               <X size={24} />
             </button>
 
-            <p className="text-sm font-black uppercase tracking-[0.28em] text-sky-500">
+            <p className="text-sm font-black uppercase tracking-[0.28em] text-[#60a5fa] [text-shadow:0_0_10px_rgba(96,165,250,0.9)]">
               Leistung {selectedService.number}
             </p>
-            <span className="hex-icon mx-auto mt-7 size-24 drop-shadow-[0_0_18px_rgba(245,158,11,0.75)] sm:size-28">
+            <span className="hex-icon service-detail-icon mx-auto mt-7 size-24 sm:size-28">
               <span className="hex-icon-inner">
-                <SelectedIcon size={50} className="text-sky-500" />
+                <SelectedIcon size={50} className="text-[#60a5fa] drop-shadow-[0_0_7px_rgba(96,165,250,0.9)]" />
               </span>
             </span>
             <h3
@@ -131,14 +131,14 @@ export default function Services() {
               <a
                 href="#kontakt"
                 onClick={closeDetails}
-                className="rounded-xl bg-sky-500 px-7 py-4 text-sm font-black uppercase tracking-wider text-white transition hover:bg-sky-400 hover:shadow-[0_0_25px_rgba(14,165,233,0.55)]"
+                className="rounded-xl bg-sky-500 px-7 py-4 text-sm font-black uppercase tracking-wider text-white transition hover:bg-sky-400 hover:shadow-[0_0_25px_rgba(46,68,120,0.55)]"
               >
                 Projekt anfragen
               </a>
               <button
                 type="button"
                 onClick={closeDetails}
-                className="cursor-pointer rounded-xl border border-sky-500 px-7 py-4 text-sm font-black uppercase tracking-wider text-sky-600 transition hover:bg-sky-500 hover:text-white dark:text-sky-300"
+                className="cursor-pointer rounded-xl border border-[#2c3d6e] px-7 py-4 text-sm font-black uppercase tracking-wider text-[#2c3d6e] transition-all duration-300 hover:border-[#60a5fa] hover:bg-[#60a5fa]/10 hover:text-[#60a5fa] hover:shadow-[0_0_22px_rgba(96,165,250,0.4)] hover:[text-shadow:0_0_9px_rgba(96,165,250,0.9)]"
               >
                 Schließen
               </button>

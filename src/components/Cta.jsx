@@ -2,7 +2,7 @@ export default function Cta() {
   return (
     <section id="kontakt" className="relative overflow-hidden bg-white py-24 transition-colors duration-300 blue-grid dark:bg-slate-950">
       <div className="section-shell">
-        <div className="overflow-hidden rounded-[2.5rem] bg-sky-500 p-8 text-white shadow-2xl shadow-sky-500/20 transition-colors duration-300 dark:bg-sky-900 dark:shadow-black/30 sm:p-12 lg:p-16">
+        <div className="overflow-hidden rounded-[2.5rem] bg-sky-500 p-8 text-white shadow-2xl shadow-sky-500/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_28px_70px_rgba(26,42,79,0.28)] dark:bg-sky-900 dark:shadow-black/30 sm:p-12 lg:p-16">
           <div className="grid gap-10 lg:grid-cols-[1.25fr_0.75fr] lg:items-end">
             <div className="max-w-3xl">
               <p className="text-sm font-black uppercase tracking-[0.25em] text-white/75">
@@ -18,13 +18,13 @@ export default function Cta() {
               </p>
               <a
                 href="mailto:info@bmsb-gmbh.com"
-                className="mt-8 inline-flex rounded-xl bg-white px-6 py-4 font-black uppercase tracking-wide text-sky-600 transition hover:-translate-y-1"
+                className="mt-8 inline-flex rounded-xl bg-white px-6 py-4 font-black uppercase tracking-wide text-[#1a2a4f] transition hover:-translate-y-1 hover:bg-sky-50"
               >
                 E-Mail schreiben →
               </a>
             </div>
 
-            <address className="not-italic rounded-3xl border border-white/25 bg-white/10 p-6 text-white backdrop-blur">
+            <address className="not-italic rounded-3xl border border-white/25 bg-white/10 p-6 text-white backdrop-blur transition-all duration-300 hover:border-white/45 hover:bg-white/15">
               <p className="font-black">BMSB Bau- und Industrieservice GmbH</p>
               <p className="mt-4 leading-7 text-white/85">
                 Unter den Linden 26–30<br />

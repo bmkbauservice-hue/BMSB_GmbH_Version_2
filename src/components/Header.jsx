@@ -17,18 +17,14 @@ export default function Header() {
       <div className="header-shell flex h-24 items-center justify-between gap-3 sm:h-32 lg:h-36 lg:gap-8">
         <a
           href="#start"
-          className="group relative flex w-40 shrink-0 flex-col items-center justify-center overflow-hidden rounded-2xl border-2 border-sky-500/15 bg-sky-500/[0.03] px-3 py-2 shadow-[0_0_0_rgba(14,165,233,0)] transition-all duration-300 hover:scale-[1.04] hover:border-sky-400/60 hover:bg-sky-500/[0.06] hover:shadow-[0_0_38px_rgba(14,165,233,0.25)] sm:w-52 lg:w-60 dark:bg-sky-400/[0.03]"
+          className="group relative flex w-48 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-transparent bg-transparent px-2 py-2 transition-all duration-300 hover:scale-[1.03] hover:border-sky-400/30 hover:bg-sky-500/[0.04] sm:w-64 lg:w-72 dark:hover:bg-white/[0.04]"
           aria-label="BMSB Startseite"
         >
-          <span className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,165,233,0.14),transparent_68%)] opacity-70 transition-opacity group-hover:opacity-100" />
           <img
-            src={`${import.meta.env.BASE_URL}images/brand/bmsb-logo-clean.png`}
-            alt="BMSB"
-            className="relative h-[58px] w-auto object-contain drop-shadow-[0_0_10px_rgba(14,165,233,0.2)] transition-all duration-300 group-hover:drop-shadow-[0_0_18px_rgba(14,165,233,0.55)] sm:h-[76px] lg:h-[88px]"
+            src={`${import.meta.env.BASE_URL}images/brand/bmsb-logo-wordmark.png`}
+            alt="BMSB Bau- und Industrieservice GmbH"
+            className="relative h-auto w-full object-contain transition-[filter] duration-300 dark:brightness-0 dark:invert"
           />
-          <span className="relative mt-1 hidden whitespace-nowrap text-[10px] font-black tracking-[0.08em] text-slate-700 uppercase sm:block lg:text-[11px] dark:text-slate-100">
-            Bau &amp; Industrieservice GmbH
-          </span>
         </a>
 
         <nav className="hidden items-center gap-3 xl:flex" aria-label="Hauptnavigation">
@@ -36,7 +32,7 @@ export default function Header() {
             <a
               key={label}
               href={href}
-              className="inline-flex min-h-14 items-center rounded-xl border-2 border-transparent px-5 py-4 text-sm font-black uppercase tracking-[0.11em] text-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-600 hover:shadow-[0_10px_25px_rgba(14,165,233,0.16)] dark:text-slate-100 dark:hover:border-sky-400 dark:hover:bg-slate-900 dark:hover:text-sky-300"
+              className="inline-flex min-h-14 items-center rounded-xl border-2 border-transparent px-5 py-4 text-sm font-black uppercase tracking-[0.11em] text-slate-700 transition-all duration-300 hover:-translate-y-1 hover:border-sky-500 hover:bg-sky-50 hover:text-sky-600 hover:shadow-[0_10px_25px_rgba(26,42,79,0.16)] dark:text-slate-100 dark:hover:border-sky-400 dark:hover:bg-slate-900 dark:hover:text-sky-300"
             >
               {label}
             </a>
@@ -48,7 +44,7 @@ export default function Header() {
 
           <a
             href="#kontakt"
-            className="hidden min-h-16 items-center rounded-xl border-2 border-sky-400 bg-sky-500 px-8 text-sm font-black uppercase tracking-[0.1em] text-white shadow-[0_15px_34px_rgba(14,165,233,0.3)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:border-amber-300 hover:bg-sky-600 hover:shadow-[0_18px_40px_rgba(14,165,233,0.4),0_0_22px_rgba(245,158,11,0.22)] dark:hover:border-amber-300 lg:inline-flex"
+            className="hidden min-h-16 items-center rounded-xl border-2 border-sky-400 bg-sky-500 px-8 text-sm font-black uppercase tracking-[0.1em] text-white shadow-[0_15px_34px_rgba(26,42,79,0.3)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:border-sky-300 hover:bg-sky-600 hover:shadow-[0_18px_40px_rgba(26,42,79,0.4)] lg:inline-flex"
           >
             Projekt anfragen
           </a>
