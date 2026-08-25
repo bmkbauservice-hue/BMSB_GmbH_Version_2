@@ -99,10 +99,6 @@ export default function Projects() {
               Unsere <span className="text-sky-500">Galerie</span>
             </h2>
           </div>
-          <p className="max-w-xl leading-7 text-slate-600 dark:text-slate-300">
-            Echte Aufnahmen aus Hochbau, Betonbau, Infrastruktur und Ausbau –
-            zuverlässig umgesetzt und sauber dokumentiert.
-          </p>
         </div>
 
         <div className="mt-10 flex flex-wrap gap-3" aria-label="Galerie filtern">
