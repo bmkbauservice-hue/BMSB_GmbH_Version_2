@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bmkbauservice-hue.github.io/BMSB_GmbH_Version_2/sitemap.xml

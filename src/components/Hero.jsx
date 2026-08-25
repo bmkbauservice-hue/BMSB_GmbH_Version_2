@@ -20,11 +20,6 @@ export default function Hero() {
           src={`${import.meta.env.BASE_URL}images/hero/hero-bmsb.jpg`}
           alt="Bauarbeiter vor einem Rohbau"
           className="h-full w-full object-cover object-[68%_center] grayscale contrast-[1.08] sm:object-[64%_center] lg:object-right"
-          onError={(event) => {
-            event.currentTarget.onerror = null;
-            event.currentTarget.src =
-              "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=2000&q=90";
-          }}
         />
       </div>
 

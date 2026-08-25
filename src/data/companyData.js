@@ -10,9 +10,10 @@ export const company = {
   },
   email: "info@bmsb-gmbh.com",
 
-  // Ergänzen, sobald vorhanden:
-  phone: null,
-  commercialRegister: null,
-  registerCourt: null,
-  vatId: null,
+  phone: "+49 30 85625715",
+  mobile: "+49 1573 5983260",
+  fax: "+49 30 85625716",
+  commercialRegister: "HRB 180463 B",
+  registerCourt: "Amtsgericht Charlottenburg",
+  vatId: "DE 308385043",
 };
