@@ -3,11 +3,11 @@ import { ChevronLeft, ChevronRight, Expand, Images, X } from "lucide-react";
 
 const galleryBaseUrl = `${import.meta.env.BASE_URL}images/gallery/`;
 
-const gallery = Array.from({ length: 54 }, (_, index) => {
+const gallery = Array.from({ length: 72 }, (_, index) => {
   const number = index + 1;
   const imageNumber = String(number).padStart(2, "0");
 
-  if (number <= 9 || (number >= 51 && number <= 54)) {
+  if (number <= 9 || (number >= 51 && number <= 55)) {
     return {
       src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
       category: "Hochbau",
@@ -23,7 +23,7 @@ const gallery = Array.from({ length: 54 }, (_, index) => {
     };
   }
 
-  if (number <= 46) {
+  if (number <= 46 || (number >= 56 && number <= 72)) {
     return {
       src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
       category: "Infrastruktur",
