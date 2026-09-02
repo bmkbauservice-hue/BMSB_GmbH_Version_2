@@ -111,14 +111,14 @@ export default function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
             <a
               href="#kontakt"
-              className="inline-flex min-h-13 items-center justify-center gap-3 rounded-md border-2 border-[#2c3d6e] bg-[#1a2a4f] px-7 text-xs font-black tracking-[0.08em] text-white uppercase shadow-[0_14px_40px_rgba(26,42,79,0.24)] transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-[#1a2a4f] hover:text-sky-300 hover:shadow-[0_0_26px_rgba(125,211,252,0.55)] hover:[text-shadow:0_0_8px_rgba(125,211,252,0.75)]"
+              className="inline-flex min-h-13 items-center justify-center gap-3 rounded-md border-2 border-[#2c3d6e] bg-[#1a2a4f] px-7 text-xs font-black tracking-[0.08em] text-white uppercase shadow-[0_14px_40px_rgba(26,42,79,0.24)] transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-[#1a2a4f] hover:text-sky-300 hover:shadow-[0_0_20px_rgba(125,211,252,0.22)]"
             >
               Projekt anfragen <ArrowRight size={18} />
             </a>
 
             <a
               href="#leistungen"
-              className="inline-flex min-h-13 items-center justify-center rounded-md border-2 border-slate-400/70 bg-white/85 px-7 text-xs font-black tracking-[0.08em] text-slate-700 uppercase backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-white hover:text-sky-400 hover:shadow-[0_0_26px_rgba(125,211,252,0.50)] hover:[text-shadow:0_0_8px_rgba(125,211,252,0.70)] dark:border-slate-600 dark:bg-slate-900/80 dark:text-slate-200 dark:hover:border-sky-300 dark:hover:bg-slate-900 dark:hover:text-sky-300"
+              className="inline-flex min-h-13 items-center justify-center rounded-md border-2 border-slate-400/70 bg-white/85 px-7 text-xs font-black tracking-[0.08em] text-slate-700 uppercase backdrop-blur-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-white hover:text-sky-400 hover:shadow-[0_0_18px_rgba(125,211,252,0.18)] dark:border-slate-600 dark:bg-slate-900/80 dark:text-slate-200 dark:hover:border-sky-300 dark:hover:bg-slate-900 dark:hover:text-sky-300"
             >
               Unsere Leistungen
             </a>
@@ -156,7 +156,7 @@ export default function Hero() {
                         <Icon
                           size={38}
                           strokeWidth={2.2}
-                          className={`strength-svg transition-all duration-300 group-hover:text-sky-300 group-hover:drop-shadow-[0_0_7px_rgba(125,211,252,0.85)] ${
+                          className={`strength-svg transition-colors duration-300 ${
                             isActive ? "text-sky-400" : "text-sky-500"
                           }`}
                         />

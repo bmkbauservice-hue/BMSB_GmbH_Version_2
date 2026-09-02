@@ -106,36 +106,36 @@ function Datenschutz() {
 
       <section>
         <h3 className="text-lg font-black text-[#1a2a4f] dark:text-white">
-          2. Hosting
+          2. Hosting über GitHub Pages
         </h3>
-        {window.location.hostname.endsWith("github.io") ? (
-          <>
-            <p className="mt-2">
-              Diese Vorschau wird über GitHub Pages bereitgestellt. Beim Aufruf
-              können technisch erforderliche Verbindungsdaten durch GitHub
-              verarbeitet werden.
-            </p>
-            <p className="mt-2">
-              Die GitHub-Pages-Version dient ausschließlich als technische
-              Vorschau. Die produktive Unternehmenswebsite wird unter
-              bmsb-gmbh.com bereitgestellt.
-            </p>
-          </>
-        ) : (
-          <>
-            <p className="mt-2">
-              Diese Website wird bei IONOS SE, Elgendorfer Str. 57, 56410
-              Montabaur, Deutschland, gehostet.
-            </p>
-            <p className="mt-2">
-              Beim Aufruf der Website verarbeitet der Hosting-Anbieter technisch
-              erforderliche Server- und Verbindungsdaten, insbesondere zur
-              sicheren und störungsfreien Bereitstellung der Website. Die
-              Verarbeitung erfolgt auf Grundlage unseres berechtigten Interesses
-              gemäß Art. 6 Abs. 1 lit. f DSGVO.
-            </p>
-          </>
-        )}
+        <p className="mt-2">
+          Diese Website wird über GitHub Pages bereitgestellt. Anbieter ist die
+          GitHub B.V., Vijzelstraat 68-72, 1017 HL Amsterdam, Niederlande; die
+          technische Infrastruktur kann außerdem durch GitHub, Inc., 88 Colin P
+          Kelly Jr Street, San Francisco, CA 94107, USA, betrieben werden.
+        </p>
+        <p className="mt-2">
+          Beim Aufruf der Website verarbeitet der Hosting-Anbieter technisch
+          erforderliche Verbindungsdaten, insbesondere IP-Adresse, Datum und
+          Uhrzeit des Abrufs, aufgerufene URL, Referrer, Browser- und
+          Geräteinformationen. Die Verarbeitung dient der sicheren und
+          störungsfreien Bereitstellung der Website und erfolgt auf Grundlage
+          unseres berechtigten Interesses gemäß Art. 6 Abs. 1 lit. f DSGVO.
+        </p>
+        <p className="mt-2">
+          Eine Verarbeitung in Drittländern, insbesondere den USA, kann nicht
+          ausgeschlossen werden. GitHub informiert über eingesetzte
+          Übermittlungsmechanismen in seiner{" "}
+          <a
+            className={externalLinkClass}
+            href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Datenschutzerklärung
+          </a>
+          .
+        </p>
       </section>
 
       <section>

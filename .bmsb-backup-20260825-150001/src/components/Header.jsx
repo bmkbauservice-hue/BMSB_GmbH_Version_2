@@ -44,7 +44,7 @@ export default function Header() {
 
           <a
             href="#kontakt"
-            className="hidden min-h-16 items-center rounded-xl border-2 border-slate-600/70 bg-slate-900/75 px-8 text-sm font-black uppercase tracking-[0.1em] text-white shadow-[0_12px_30px_rgba(15,23,42,0.22)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.02] hover:border-sky-300 hover:bg-slate-900 hover:text-sky-300 hover:shadow-[0_0_26px_rgba(125,211,252,0.55)] hover:[text-shadow:0_0_8px_rgba(125,211,252,0.75)] dark:border-slate-600 dark:bg-slate-900/80 dark:hover:border-sky-300 dark:hover:text-sky-300 lg:inline-flex"
+            className="hidden min-h-16 items-center rounded-xl border-2 border-sky-400 bg-sky-500 px-8 text-sm font-black uppercase tracking-[0.1em] text-white shadow-[0_15px_34px_rgba(26,42,79,0.3)] transition-all duration-300 hover:-translate-y-1 hover:scale-[1.03] hover:border-sky-300 hover:bg-sky-600 hover:shadow-[0_18px_40px_rgba(26,42,79,0.4)] lg:inline-flex"
           >
             Projekt anfragen
           </a>

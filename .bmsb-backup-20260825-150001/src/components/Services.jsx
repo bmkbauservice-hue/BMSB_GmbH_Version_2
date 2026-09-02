@@ -43,8 +43,8 @@ export default function Services() {
       <div className="section-shell">
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-[1.55fr_repeat(4,1fr)] xl:items-stretch">
           <div className="flex flex-col justify-center pb-6 md:col-span-2 xl:col-span-1 xl:pb-0 xl:pr-5">
-            <p className="inline-flex w-fit items-center rounded-lg border border-sky-300/55 bg-sky-400/[0.04] px-4 py-2 text-base font-black uppercase tracking-[0.18em] text-sky-400 shadow-[0_0_14px_rgba(125,211,252,0.16)] sm:text-lg dark:border-sky-300/45 dark:text-sky-300">
-              Was wir tun
+            <p className="flex items-center gap-3 text-sm font-black uppercase tracking-[0.22em] text-sky-500 sm:text-base">
+              <span className="h-0.5 w-9 bg-sky-500" /> Was wir tun
             </p>
             <h2 className="mt-5 text-4xl font-black uppercase italic tracking-tight text-slate-900 dark:text-white sm:text-5xl">
               Unsere <span className="text-sky-500">Leistungen</span>
