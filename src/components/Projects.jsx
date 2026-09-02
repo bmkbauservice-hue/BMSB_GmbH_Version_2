@@ -36,7 +36,7 @@ const gallery = Array.from({ length: 72 }, (_, index) => {
     category: "Holzbau",
     title: "Holzbau und Ausbau",
   };
-}).filter((_, index) => index !== 23);
+}).filter((image) => image.src !== `${galleryBaseUrl}bmsb-projekt-24.jpg`);
 
 const filters = ["Alle", "Hochbau", "Betonbau", "Infrastruktur", "Holzbau"];
 
