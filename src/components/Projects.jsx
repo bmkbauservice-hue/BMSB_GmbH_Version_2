@@ -3,11 +3,11 @@ import { ChevronLeft, ChevronRight, Expand, Images, X } from "lucide-react";
 
 const galleryBaseUrl = `${import.meta.env.BASE_URL}images/gallery/`;
 
-const gallery = Array.from({ length: 50 }, (_, index) => {
+const gallery = Array.from({ length: 54 }, (_, index) => {
   const number = index + 1;
   const imageNumber = String(number).padStart(2, "0");
 
-  if (number <= 9) {
+  if (number <= 9 || (number >= 51 && number <= 54)) {
     return {
       src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
       category: "Hochbau",
@@ -92,8 +92,8 @@ export default function Projects() {
       <div className="section-shell">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="flex items-center gap-4 text-base font-black uppercase tracking-[0.14em] text-sky-500 sm:text-lg">
-              <span className="h-0.5 w-9 bg-sky-500" /> Einblicke in unsere Arbeit
+            <p className="inline-flex w-fit items-center rounded-lg border border-sky-300/55 bg-sky-400/[0.04] px-4 py-2 text-lg font-black uppercase tracking-[0.13em] text-sky-400 shadow-[0_0_14px_rgba(125,211,252,0.16)] sm:text-xl dark:border-sky-300/45 dark:text-sky-300">
+              Einblicke in unsere Arbeit
             </p>
             <h2 className="mt-5 text-4xl font-black uppercase italic tracking-tight text-slate-900 dark:text-white sm:text-5xl">
               Unsere <span className="text-sky-500">Galerie</span>
