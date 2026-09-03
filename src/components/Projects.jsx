@@ -3,42 +3,460 @@ import { ChevronLeft, ChevronRight, Expand, Images, X } from "lucide-react";
 
 const galleryBaseUrl = `${import.meta.env.BASE_URL}images/gallery/`;
 
-const gallery = Array.from({ length: 72 }, (_, index) => {
-  const number = index + 1;
-  const imageNumber = String(number).padStart(2, "0");
-
-  if (number <= 9 || (number >= 51 && number <= 55)) {
-    return {
-      src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
-      category: "Hochbau",
-      title: "Hochbau und Rohbau",
-    };
-  }
-
-  if (number <= 19 || number === 47) {
-    return {
-      src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
-      category: "Betonbau",
-      title: "Beton- und Treppenbau",
-    };
-  }
-
-  if (number <= 46 || (number >= 56 && number <= 72)) {
-    return {
-      src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
-      category: "Infrastruktur",
-      title: "Infrastruktur und Ingenieurbau",
-    };
-  }
-
-  return {
-    src: `${galleryBaseUrl}bmsb-projekt-${imageNumber}.jpg`,
+const gallery = [
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-01.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-02.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-03.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-04.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-05.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-06.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-07.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-08.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-09.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-10.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-11.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-12.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-13.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-14.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-15.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-16.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-17.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-18.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-19.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-20.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-21.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-22.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-23.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-24.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-25.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-26.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-27.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-28.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-29.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-30.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-31.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-32.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-33.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-34.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-35.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-36.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-37.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-38.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-39.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-40.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-41.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-42.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-43.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-44.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-45.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-46.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-47.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-48.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-49.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-50.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-51.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-52.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-53.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-54.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-55.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-56.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-57.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-58.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-59.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-60.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-61.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-62.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-63.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-64.jpg`,
+    category: "Roh und Hochbau",
+    title: "Roh- und Hochbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-65.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-66.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-67.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-68.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-69.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-70.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-71.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-72.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-73.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-74.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-75.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-76.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-77.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-78.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-79.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-80.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-81.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-82.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-83.jpg`,
+    category: "Infra und Ingenieurbau",
+    title: "Infra- und Ingenieurbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-84.jpg`,
     category: "Holzbau",
-    title: "Holzbau und Ausbau",
-  };
-}).filter((image) => image.src !== `${galleryBaseUrl}bmsb-projekt-24.jpg`);
+    title: "Holzbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-85.jpg`,
+    category: "Holzbau",
+    title: "Holzbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-86.jpg`,
+    category: "Holzbau",
+    title: "Holzbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-87.jpg`,
+    category: "Holzbau",
+    title: "Holzbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-88.jpg`,
+    category: "Holzbau",
+    title: "Holzbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-89.jpg`,
+    category: "Holzbau",
+    title: "Holzbau",
+  },
+  {
+    src: `${galleryBaseUrl}bmsb-projekt-90.jpg`,
+    category: "Holzbau",
+    title: "Holzbau",
+  },
+];
 
-const filters = ["Alle", "Hochbau", "Betonbau", "Infrastruktur", "Holzbau"];
+const filters = ["Alle", "Roh und Hochbau", "Infra und Ingenieurbau", "Holzbau"];
 
 export default function Projects() {
   const [filter, setFilter] = useState("Alle");
