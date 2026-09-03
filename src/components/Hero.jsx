@@ -102,7 +102,7 @@ export default function Hero() {
             <span className="block text-sky-500 dark:text-sky-300">Werte.</span>
           </h1>
 
-          <p className="mt-6 max-w-xl text-base leading-7 text-slate-700 dark:text-slate-300 sm:text-lg">
+          <p className="mt-6 max-w-xl text-base leading-7 text-slate-700 dark:text-slate-200 sm:text-lg">
             Ihr zuverlässiger Partner für anspruchsvolle Bauprojekte,
             Industrieservice, Instandhaltung und professionelle Lösungen aus
             einer Hand.
@@ -183,7 +183,7 @@ export default function Hero() {
                   <p className="text-sm font-black tracking-[0.1em] text-[#1a2a4f] uppercase dark:text-sky-300 sm:text-base">
                     {selectedStrength?.label}
                   </p>
-                  <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-700 dark:text-slate-300 sm:text-base sm:leading-7">
+                  <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-700 dark:text-slate-200 sm:text-base sm:leading-7">
                     {selectedStrength?.description}
                   </p>
                 </div>

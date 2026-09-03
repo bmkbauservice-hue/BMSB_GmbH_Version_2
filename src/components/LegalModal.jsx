@@ -6,7 +6,7 @@ const externalLinkClass =
 
 function Impressum() {
   return (
-    <div className="space-y-7 text-sm leading-7 text-slate-700 dark:text-slate-300 sm:text-base">
+    <div className="space-y-7 text-sm leading-7 text-slate-700 dark:text-slate-200 sm:text-base">
       <section>
         <h3 className="text-lg font-black text-[#1a2a4f] dark:text-white">
           Angaben gemäß § 5 DDG
@@ -81,7 +81,7 @@ function Impressum() {
 
 function Datenschutz() {
   return (
-    <div className="space-y-7 text-sm leading-7 text-slate-700 dark:text-slate-300 sm:text-base">
+    <div className="space-y-7 text-sm leading-7 text-slate-700 dark:text-slate-200 sm:text-base">
       <p>
         Mit dieser Datenschutzerklärung informieren wir darüber, welche
         personenbezogenen Daten beim Besuch dieser Website verarbeitet werden.
@@ -212,7 +212,7 @@ function Datenschutz() {
         </p>
       </section>
 
-      <p className="border-t border-slate-200 pt-5 text-xs text-slate-500 dark:border-slate-700 dark:text-slate-400">
+      <p className="border-t border-slate-200 pt-5 text-xs text-slate-500 dark:border-slate-700 dark:text-slate-300">
         Stand: 25. August 2026
       </p>
     </div>

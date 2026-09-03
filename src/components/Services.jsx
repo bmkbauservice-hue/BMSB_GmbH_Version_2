@@ -49,7 +49,7 @@ export default function Services() {
             <h2 className="mt-5 text-4xl font-black uppercase italic tracking-tight text-slate-900 dark:text-white sm:text-5xl">
               Unsere <span className="text-sky-500">Leistungen</span>
             </h2>
-            <p className="mt-5 max-w-md leading-7 text-slate-600 dark:text-slate-300">
+            <p className="mt-5 max-w-md leading-7 text-slate-600 dark:text-slate-200">
               Von der ersten Planung bis zur fachgerechten Ausführung:
               leistungsstark, transparent und zuverlässig.
             </p>
@@ -75,7 +75,7 @@ export default function Services() {
                 <h3 className="mt-5 text-base font-black uppercase text-slate-900 dark:text-white">
                   {service.title}
                 </h3>
-                <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">
+                <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-200">
                   {service.text}
                 </p>
                 <span className="mt-auto pt-5 text-xs font-black uppercase tracking-[0.15em] text-[#2c3d6e] opacity-70 transition-all duration-300 group-hover:text-[#60a5fa] group-hover:opacity-100 group-hover:[text-shadow:0_0_10px_rgba(96,165,250,0.95)]">

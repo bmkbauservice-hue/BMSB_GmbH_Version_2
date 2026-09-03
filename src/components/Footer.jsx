@@ -56,7 +56,7 @@ export default function Footer() {
             />
           </a>
 
-          <p className="mt-7 max-w-2xl text-base leading-8 text-slate-700 dark:text-slate-300 lg:text-lg">
+          <p className="mt-7 max-w-2xl text-base leading-8 text-slate-700 dark:text-slate-200 lg:text-lg">
             BMSB Bau- und Industrieservice GmbH
             <br />
             Unter den Linden 26–30
@@ -64,18 +64,18 @@ export default function Footer() {
             10117 Berlin
           </p>
 
-          <p className="mt-3 text-base leading-7 text-slate-700 dark:text-slate-300 lg:text-lg">
+          <p className="mt-3 text-base leading-7 text-slate-700 dark:text-slate-200 lg:text-lg">
             Geschäftsführer: Albert Ernst Schymik
           </p>
 
         </div>
 
-          <div className="text-base font-semibold leading-7 text-slate-700 dark:text-slate-300 lg:text-right lg:text-lg">
+          <div className="text-base font-semibold leading-7 text-slate-700 dark:text-slate-200 lg:text-right lg:text-lg">
           <p>
             © {new Date().getFullYear()} BMSB Bau- und Industrieservice GmbH
           </p>
 
-            <p className="mt-4 text-sm leading-6 text-slate-500 dark:text-slate-400 lg:text-base">
+            <p className="mt-4 text-sm leading-6 text-slate-500 dark:text-slate-300 lg:text-base">
             Handelsregister: Amtsgericht Charlottenburg
             <br />
             Registernummer: HRB 180463 B

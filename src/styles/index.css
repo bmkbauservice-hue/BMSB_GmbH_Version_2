@@ -226,3 +226,20 @@ body {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* BMSB clickable elements */
+button,
+a[href],
+[role="button"],
+summary,
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
